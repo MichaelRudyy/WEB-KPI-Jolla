@@ -44,14 +44,23 @@ body {
     padding-left: 15px !important;
 }
 
-ul {
+@media (max-width: 576px) {
+    ul {
+        margin: 0;
+        padding: 0;
+        text-align: center !important;
+        list-style: none;
+    }
+}
+
+ul.nav {
     margin: 0;
     padding: 0;
-    text-align: center;
+    text-align: left;
     list-style: none;
 }
 
-ul li {
+ul.nav li {
     padding: 2px 5px;
 }
 
