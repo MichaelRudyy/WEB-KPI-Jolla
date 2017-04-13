@@ -10,33 +10,40 @@
 
 </head>
 <body>
-<div id = "fill_screen">
-    <header>
-        <nav class="navbar navbar-toggleable navbar-inverse "><!--bg-inverse-->
-            <button class="navbar-toggler navbar-toggler-right nav-button-top-Fix" type="button" data-toggle="collapse"
-                    data-target="#collapsingNavbarXs">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="container">
-                <a class="navbar-brand logo" href="#">wolla</a>
-                <div class="navbar-collapse" id="collapsingNavbarXs">
+<div class="fill_screen">
 
+    <!-------------------------------->
 
+    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <section class="container">
+            <div class="logo-fix col-md-6">
+                <a class="logo-nav navbar-brand logo-nav mr-auto" href="#">Logo</a>
+            </div>
+            <div class="col-md-6">
+                <div class="c logo-nav collapse navbar-collapse" id="navbarTogglerDemo02">
 
-                    <!-- Magic -->
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Create Project</a>
+                    <ul class="navbar-nav ml-auto mt-2 mt-md-0">
+                        <li> <!-- centre it -->
+                            <a href="#">Link</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Log in</a>
+                        <li>
+                            <a href="#">Long Link</a>
+                        </li>
+                        <li>
+                            <a href="#">Very Long Link</a>
                         </li>
                     </ul>
-                    <!-- END OF MAGIC -->
                 </div>
             </div>
-        </nav>
-    </header>
+        </section>
+    </nav>
+
+    <!-------------------------------->
 
     <div>
         <section class="container">
@@ -60,11 +67,32 @@
 </div>
 
 
+<div id="followup_div">
 
-<div id = "followup_div">
+    <div>
+        <section class="container">
+            <div class="row">
+                <div class="col-md-4" style="background: violet">aaaa</div>
+                <div class="col-md-8" style="background: #82ee77">bbbb</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6" style="background: #ee2927">aaaa</div>
+                <div class="col-md-6" style="background: #6936ee">bbbb</div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6" style="background: #71eeeb">aaaa</div>
+                <div class="col-md-6" style="background: #b8ee30">bbbb</div>
+            </div>
+        </section>
+
+    </div>
+
 </div>
 
 <!-- JavaScript -->
+
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
         integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
         crossorigin="anonymous"></script>
@@ -74,5 +102,8 @@
         crossorigin="anonymous"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+<!-- END of JavaScript -->
+
 </body>
 </html>
