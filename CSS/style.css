@@ -30,7 +30,7 @@ body {
 
 #followup_div {
     background-color: yellow;
-    height: 500px;
+
     width: 100%;
     position: absolute;
     top: 100%;
@@ -73,8 +73,25 @@ ul.nav li {
 
 .myvid {
     position: fixed;
-    top: 0; right: 0; bottom: 0; left: 0;
+    top: 0;
+    left: 0;
 }
+
+.mydiv{
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+}
+
+
+.myimg {
+    top: 0;
+    left: 0;
+    height: auto;
+    width: 100%;
+}
+
+.pos-r{position:relative}
 
 @media (min-aspect-ratio: 16/9) {
     .myvid {
@@ -86,5 +103,15 @@ ul.nav li {
     .myvid {
         width: auto; /* actually wider than viewport */
         height: 100%;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .mobile-top{
+        -webkit-box-ordinal-group:2;order:1
+    }
+    .mobile-buttom{
+        -webkit-box-ordinal-group:3;order:2
     }
 }
