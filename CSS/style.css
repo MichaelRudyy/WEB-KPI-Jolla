@@ -107,11 +107,21 @@ ul.nav li {
 }
 
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 992px){
     .mobile-top{
         -webkit-box-ordinal-group:2;order:1
     }
     .mobile-buttom{
         -webkit-box-ordinal-group:3;order:2
     }
+}
+
+.my-text-div{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.my-head-text{
+    margin-bottom: 0.1rem
 }
