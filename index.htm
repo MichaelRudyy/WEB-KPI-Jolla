@@ -7,9 +7,9 @@
     <title>Jolla</title>
     <!-- CSS -->
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+          integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="CSS/style.css" rel="stylesheet">
 
 </head>
@@ -17,154 +17,138 @@
 
 <!-- NAVBAR -->
 
-<nav class="navbar navbar-toggleable-md navbar-light fixed-top my-nav-backgroung">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#navbarbuttom" aria-controls="navbarbuttom" aria-expanded="false"
-            aria-label="Toggle navigation">
+<nav class="navbar navbar-toggleable-sm my-color-black navbar-light sticky-top">
+
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <section class="container">
-        <div class="logo-fix col-md-6">
-            <a class="my-logo-nav navbar-brand logo-nav mr-auto logo" href="#">jolla</a>
+
+    <div class="container">
+
+        <div class="my-logo-fix"><!--Костиль-->
+            <a class="navbar-brand" href="#" style="text-align: center">jolla</a>
         </div>
-        <div class="col-md-6">
-            <div class="my-logo-nav collapse navbar-collapse " id="navbarbuttom">
-                <ul class="navbar-nav nav ml-auto">
-                    <li> <!-- centre it -->
-                        <a href="#">Link</a>
-                    </li>
-                    <li>
-                        <a href="#">Long Link</a>
-                    </li>
-                    <li>
-                        <a href="#">Very Long Link</a>
-                    </li>
-                </ul>
-            </div>
+
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto my-ul-fix">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">DisabledDisabled</a>
+                </li>
+            </ul>
         </div>
-    </section>
+
+    </div>
 </nav>
 
 <!-- END OF NAVBAR -->
 
-<div class="fill_screen" style="background-image: url('1-screen-background.jpg') ;background-size: auto 100vh ; background-position: right top;">
+<div id="my-id-screen-1" class="pos-a my-full-screen" style="background: url('src/test-1-screen.png'); background-size: 100vw auto">
     <div class="container">
-    <div class="my-1-screen-text-div">
-        <h1>
-            <p>Ми</p><p> сладкие</p><p> как конфетки</p>
-        </h1>
+        <div class="my-1-screen-text-div">
+            <h1>
+                <p>Ми</p>
+                <p> сладкие</p>
+                <p> как конфетки</p>
+            </h1>
+        </div>
     </div>
-    </div>
-    
+
 </div>
 
 
-<div class="followup_div">
+<div id="my-id-screen-after-1">
 
-    <div class="full_screen">
+    <div id="my-id-screen-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12" style="background: violet">sdsdds</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="my-id-screen-3">
+
+        <div class="container my-shadow my-margin-5-t-b">
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 my-white-bg">
+                    <div class="my-text-div">
+                        <p class="my-head-text">P-HEAD</p>
+                        <h3>HEADER</h3>
+                        <p>Alice's character has her origins in stories told by Carroll to entertain the Liddell sisters
+                            while rowing on the Isis with his friend Robinson Duckworth, and on subsequent rowing trips.
+                            Although she shares her name with Alice Liddell's given name, scholars disagree about
+                            whether or not she can be identified as being strictly based upon Liddell. Carroll
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-sm-12 mydiv " style="background: #b8ee30">
+                    <img src="example-div-img.png" class="myimg">
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-8 col-sm-12 mobile-buttom mydiv" style="background: #ee2927; right: 0">
+                    <img src="example-div-img.png" class="myimg">
+                </div>
+
+                <div class="col-lg-4 col-sm-12 mobile-top  my-white-bg">
+                    <div class="my-text-div">
+                        <p class="my-head-text">P-HEAD</p>
+                        <h3>HEADER</h3>
+                        <p>Alice's character has her origins in stories told by Carroll to entertain the Liddell sisters
+                            while rowing on the Isis with his friend Robinson Duckworth, and on subsequent rowing trips.
+                            Although she shares her name with Alice Liddell's given name, scholars disagree about
+                            whether or not she can be identified as being strictly based upon Liddell. Carroll
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-sm-12  my-white-bg">
+                    <div class="my-text-div">
+                        <p class="my-head-text">P-HEAD</p>
+                        <h3>HEADER</h3>
+                        <p>Alice's character has her origins in stories told by Carroll to entertain the Liddell sisters
+                            while rowing on the Isis with his friend Robinson Duckworth, and on subsequent rowing trips.
+                            Although she shares her name with Alice Liddell's given name, scholars disagree about
+                            whether or not she can be identified as being strictly based upon Liddell. Carroll</p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-sm-12 mydiv" style="background: #b8ee30">
+                    <img src="example-div-img.png" class="myimg">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="my-id-screen-4" class="full_screen">
         sadasdasdadsя
     </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-4 col-sm-12" style="background: violet">
-                <div class="my-text-div">
-                    <p class="my-head-text">P-HEAD</p>
-                    <h3>HEADER</h3>
-                    <p>Alice's character has her origins in stories told by Carroll to entertain the Liddell sisters
-                        while rowing on the Isis with his friend Robinson Duckworth, and on subsequent rowing trips.
-                        Although she shares her name with Alice Liddell's given name, scholars disagree about
-                        whether or not she can be identified as being strictly based upon Liddell. Carroll
-                        characterised her as "loving and gentle", "courteous to all", "trustful", and "wildly
-                        curious".[1] His illustrations of her in Alice's Adventures Under Ground, the first version
-                        of Alice's Adventures in Wonderland are influenced by the Pre-Raphaelite artists.</p>
-                </div>
-            </div>
-            <div class="col-lg-8 col-sm-12 mydiv pos-r" style="background: #b8ee30">
-                <img src="example-div-img.png" class="myimg">
-            </div>
-        </div>
-
-        <div class="row">
-
-            <div class="col-lg-8 col-sm-12 mobile-buttom mydiv" style="background: #ee2927; right: 0">
-                <img src="example-div-img.png" class="myimg">
-            </div>
-
-            <div class="col-lg-4 col-sm-12 mobile-top" style="background: #6936ee ; left: 0">
-                <div class="my-text-div">
-                    <p class="my-head-text">P-HEAD</p>
-                    <h3>HEADER</h3>
-                    <p>Alice's character has her origins in stories told by Carroll to entertain the Liddell sisters
-                        while rowing on the Isis with his friend Robinson Duckworth, and on subsequent rowing trips.
-                        Although she shares her name with Alice Liddell's given name, scholars disagree about
-                        whether or not she can be identified as being strictly based upon Liddell. Carroll
-                        characterised her as "loving and gentle", "courteous to all", "trustful", and "wildly
-                        curious".[1] His illustrations of her in Alice's Adventures Under Ground, the first version
-                        of Alice's Adventures in Wonderland are influenced by the Pre-Raphaelite artists.</p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row">
-            <div class="col-lg-4 col-sm-12" style="background: violet">
-                <div class="my-text-div">
-                    <p class="my-head-text">P-HEAD</p>
-                    <h3>HEADER</h3>
-                    <p>Alice's character has her origins in stories told by Carroll to entertain the Liddell sisters
-                        while rowing on the Isis with his friend Robinson Duckworth, and on subsequent rowing trips.
-                        Although she shares her name with Alice Liddell's given name, scholars disagree about
-                        whether or not she can be identified as being strictly based upon Liddell. Carroll
-                        characterised her as "loving and gentle", "courteous to all", "trustful", and "wildly
-                        curious".[1] His illustrations of her in Alice's Adventures Under Ground, the first version
-                        of Alice's Adventures in Wonderland are influenced by the Pre-Raphaelite artists.</p>
-                </div>
-            </div>
-            <div class="col-lg-8 col-sm-12 mydiv pos-r" style="background: #b8ee30">
-                <img src="example-div-img.png" class="myimg">
-            </div>
-        </div>
-
-        <div class="row">
-
-            <div class="col-lg-8 col-sm-12 mobile-buttom mydiv" style="background: #ee2927; right: 0">
-                <img src="example-div-img.png" class="myimg">
-            </div>
-
-            <div class="col-lg-4 col-sm-12 mobile-top" style="background: #6936ee ; left: 0">
-                <div class="my-text-div">
-                    <p class="my-head-text">P-HEAD</p>
-                    <h3>HEADER</h3>
-                    <p>Alice's character has her origins in stories told by Carroll to entertain the Liddell sisters
-                        while rowing on the Isis with his friend Robinson Duckworth, and on subsequent rowing trips.
-                        Although she shares her name with Alice Liddell's given name, scholars disagree about
-                        whether or not she can be identified as being strictly based upon Liddell. Carroll
-                        characterised her as "loving and gentle", "courteous to all", "trustful", and "wildly
-                        curious".[1] His illustrations of her in Alice's Adventures Under Ground, the first version
-                        of Alice's Adventures in Wonderland are influenced by the Pre-Raphaelite artists.</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-    <div class="full_screen">
-        sadasdasdadsя
-    </div>
-
-    <div class="full_screen">
+    <div id="my-id-screen-5" class="full_screen">
         sadasdasdadsя
     </div>
 </div>
-
-
-
 
 
 <!-- JavaScript -->
 
+<script src="JS/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
         integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
         crossorigin="anonymous"></script>
