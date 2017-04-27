@@ -1,0 +1,62 @@
+.s1-f1 {
+     z-index: 1;
+     position: absolute;
+     bottom: 0px;
+     right: 447px;
+     width: 200px;
+     height: 300px;
+     transform: skew(-10deg);
+     background: #393E64;
+ }
+
+.s1-f2 {
+    z-index: 1;
+    position: absolute;
+    bottom: -300px;
+    right: 367px;
+    width: 200px;
+    height: 600px;
+    transform: skew(10deg);
+    background: #4A5284;
+}
+
+.s1-f3 {
+    z-index: 1;
+    position: absolute;
+    bottom: -300px;
+    right: 242px;
+    width: 200px;
+    height: 400px;
+    transform: skew(-20deg);
+    background: #606AA6;
+}
+
+.s2-f1{
+    position: absolute;
+    bottom: -100px;
+    left: 0px;
+    width: 400px;
+    height: 200px;
+    transform: skewY(20deg);
+    background: #E1E1E1;
+}
+
+.s2-f2{
+    position: absolute;
+    bottom: -267px;
+    left: 0px;
+    width: 400px;
+    height: 200px;
+    transform: skewY(-25deg);
+    background: #bebebe;
+}
+
+.s2-f3{
+    position: absolute;
+    bottom: -476px;
+    left: 0px;
+    width: 400px;
+    height: 200px;
+    transform: skewY(30deg);
+    background: #E1E1E1;
+}
