@@ -6,106 +6,206 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Jolla</title>
     <!-- CSS -->
-    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="CSS/style.css" rel="stylesheet">
+    <link href="CSS/figure.css" rel="stylesheet">
 
 </head>
 <body>
 
-<nav class="navbar navbar-toggleable-md navbar-light bg-faded fixed-top">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-            data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-            aria-label="Toggle navigation">
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-toggleable-sm my-color-black navbar-light sticky-top">
+
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <section class="container">
-        <div class="logo-fix col-md-6">
-            <a class="logo-nav navbar-brand logo-nav mr-auto" href="#">Logo</a>
+
+    <div class="container">
+
+        <div class="my-logo-fix"><!--Костиль-->
+            <a class="navbar-brand" href="#" style="text-align: center">jolla</a>
         </div>
-        <div class="col-md-6">
-            <div class="logo-nav collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav nav ml-auto">
-                    <li> <!-- centre it -->
-                        <a href="#">Link</a>
-                    </li>
-                    <li>
-                        <a href="#">Long Link</a>
-                    </li>
-                    <li>
-                        <a href="#">Very Long Link</a>
-                    </li>
-                </ul>
-            </div>
+
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto my-ul-fix">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">DisabledDisabled</a>
+                </li>
+            </ul>
         </div>
-    </section>
+
+    </div>
 </nav>
 
-<div class="fill_screen">
-<!--
-    <video autoplay loop muted class="myvid">
-        <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-        Your browser does not support the video tag. I suggest you upgrade your browser.
-    </video>
-
-    <!-------------------------------->
+<!-- END OF NAVBAR -->
 
 
 
+<div id="my-id-screen-1" class="pos-a my-full-screen">
+    <div class="container">
+        <div class="my-1-screen-text-div">
+            <h1 class="my-font-MS-light my-font-size-medium my-color-blue">
+                We helps you
+            </h1>
+            <h1 class="my-font-MS-semibold my-font-size-large my-color-blue">
+                Create<br>
+                Beauty
+            </h1>
+        </div>
+    </div>
+
+</div>
 
 
-    <!-------------------------------->
+<div id="my-id-screen-after-1">
 
-    <div>
-        <section class="container">
+    <div id="my-id-screen-2">
+        <div class="container" style="z-index: 2;">
+            <div class="row my-title-div-2screen-Trusted">
+                <div class="col-lg-8 col-sm-12 ml-auto">
+                    <h1 class="my-font-MS-semibold my-font-size-large my-color-light">Trusted</h1>
+                </div>
+            </div>
             <div class="row">
-                <div class="col-md-4" style="background: violet">aaaa</div>
-                <div class="col-md-8" style="background: #82ee77">bbbb</div>
+                <div class="col-lg-8 col-sm-12 ml-auto">
+                    <h1 class="my-font-MS-regular my-font-size-small-m my-color-light">Many of the world’s most dynamic companies and individuals find JetBrains tools make them more creative and effective.</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-sm-12 ml-auto">
+                    <!-- КОСТИЛЬ С MARGIN Внизу-->
+                    <h1 class="my-font-MS-medium my-font-size-medium my-color-light" style="margin-top: 7vh">What Developers Say</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-sm-12 ml-auto">
+                    <p class="my-font-size-small-m my-font-MS-light my-color-light">
+                        Alice’s character has her origins in stories told by Carroll to entertain the Liddell sisters while rowing on the Isis with his friend Robinson Duckworth, and on subsequent rowing trips. Although she shares her name with Alice Liddell’s given name, scholars disagree about hether or not she can be identified as being strictly based upon Liddell.
+                    </p>
+                    <p class="my-font-size-small-m my-font-MS-semibold my-color-light">
+                        David Starr,<br>
+                        Healthwise
+                    </p>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <p class="my-font-size-small-m my-font-MS-light my-color-light">
+                        Alice’s character has her origins in stories told by Carroll to entertain the Liddell sisters while rowing on the Isis with his friend Robinson Duckworth, and on subsequent rowing trips.
+                    </p>
+                    <p class="my-font-size-small-m my-font-MS-semibold my-color-light">
+                        David Starr,<br>
+                        Healthwise
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="my-id-screen-3">
+        <div class="my-black-div-between-2-and-3 pos-a"></div>
+
+
+        <div class="container my-shadow my-big-div-in-3-screen"  style="width: 70vw"><!-- костиль с позицыями -->
+            <div class="row">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="my-text-div">
+                        <p class="my-head-text">P-HEAD</p>
+                        <h3>HEADER</h3>
+                        <p>Alice's character has her origins in stories told by Carroll to entertain the Liddell sisters
+                            while rowing on the Isis with his friend Robinson Duckworth, and on subsequent rowing trips.
+                            Although she shares her name with Alice Liddell's given name, scholars disagree about
+                            whether or not she can be identified as being strictly based upon Liddell. Carroll
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-sm-12 mydiv " style="background: #b8ee30">
+                    <img src="example-div-img.png" class="myimg">
+                </div>
             </div>
 
             <div class="row">
-                <div class="col-md-6" style="background: #ee2927">aaaa</div>
-                <div class="col-md-6" style="background: #6936ee">bbbb</div>
+
+                <div class="col-lg-8 col-sm-12 mobile-buttom mydiv" style="background: #ee2927; right: 0">
+                    <img src="example-div-img.png" class="myimg">
+                </div>
+
+                <div class="col-lg-4 col-sm-12 mobile-top">
+                    <div class="my-text-div">
+                        <p class="my-head-text">P-HEAD</p>
+                        <h3>HEADER</h3>
+                        <p>Alice's character has her origins in stories told by Carroll to entertain the Liddell sisters
+                            while rowing on the Isis with his friend Robinson Duckworth, and on subsequent rowing trips.
+                            Although she shares her name with Alice Liddell's given name, scholars disagree about
+                            whether or not she can be identified as being strictly based upon Liddell. Carroll
+                        </p>
+                    </div>
+                </div>
+
             </div>
 
             <div class="row">
-                <div class="col-md-6" style="background: #71eeeb">aaaa</div>
-                <div class="col-md-6" style="background: #b8ee30">bbbb</div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="my-text-div">
+                        <p class="my-head-text">P-HEAD</p>
+                        <h3>HEADER</h3>
+                        <p>Alice's character has her origins in stories told by Carroll to entertain the Liddell sisters
+                            while rowing on the Isis with his friend Robinson Duckworth, and on subsequent rowing trips.
+                            Although she shares her name with Alice Liddell's given name, scholars disagree about
+                            whether or not she can be identified as being strictly based upon Liddell. Carroll</p>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-sm-12 mydiv" style="background: #b8ee30">
+                    <img src="example-div-img.png" class="myimg">
+                </div>
             </div>
-        </section>
 
+        </div>
+    </div>
+
+    <div id="my-id-screen-4" class="full_screen">
+        sadasdasdadsя
+    </div>
+
+    <div id="my-id-screen-5" class="full_screen">
+        sadasdasdadsя
     </div>
 </div>
 
 
-<div id="followup_div">
-    <section class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 col-sm-12" style="background: violet">aaaa</div>
-                <div class="col-lg-8 col-sm-12 mydiv pos-r" style="background: #b8ee30"><img src="0001.jpg" class="myimg"></div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6 mobile-buttom mydiv" style="background: #ee2927; right: 0"><img src="0001.jpg" class="myimg"></div>
-                <div class="col-md-6 mobile-top" style="background: #6936ee ; left: 0">bbbb</div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6 order-1" style="background: #71eeeb">aaaa</div>
-                <div class="col-md-6 order-2" style="background: #b8ee30">bbbb</div>
-            </div>
-        </section>
-</div>
+<div class="s1-f1"></div>
+<div class="s1-f2"></div>
+<div class="s1-f3"></div>
+<div class="s2-f2"></div>
+<div class="s2-f3"></div>
+<div class="s2-f1"></div>
 
 <!-- JavaScript -->
 
+<script src="JS/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
         integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
         crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
         integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
         crossorigin="anonymous"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
 <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
 
 <!-- END of JavaScript -->
