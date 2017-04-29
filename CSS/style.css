@@ -17,7 +17,6 @@
     background: #161616;
     width: 100%;
 
-
 }
 
 #my-id-screen-3 {
@@ -54,16 +53,26 @@
     }
 }
 
-.my-shadow {
-    -webkit-box-shadow: 14px 10px 59px -6px rgba(22,22,22,0.22);
-    -moz-box-shadow: 14px 10px 59px -6px rgba(22,22,22,0.22);
-    box-shadow: 14px 10px 59px -6px rgba(22,22,22,0.22);
+@media screen and (min-width: 576px){
+    .my-shadow {
+        -webkit-box-shadow: 0px 4px 8px 0 rgba(21,21,21,0.3), 0px 6px 20px 0 rgba(21,21,21,0.3);
+        -moz-box-shadow:  0px 4px 8px 0 rgba(21,21,21,0.3), 0px 6px 20px 0 rgba(21,21,21,0.3);
+        box-shadow:  0px 4px 8px 0 rgba(21,21,21,0.3), 0px 6px 20px 0 rgba(21,21,21,0.3);
+    }
 }
 
-.my-big-div-in-3-screen {
-    background-color: #EAEAEC;
-    margin-top: 50px;
 
+
+.my-big-div-in-3-screen {
+
+    background-color: #EAEAEC;
+
+}
+
+@media screen and (min-width: 992px) {
+    .my-block-960px{
+        width: 960px;
+    }
 }
 
 .my-white-bg {
@@ -75,14 +84,22 @@
 }
 
 .my-1-screen-text-div {
+    position: absolute !important;
+    bottom: 30vh;
+}
 
-    padding-top: 40vh;
+@media screen and (max-height: 650px) {
+    .my-1-screen-text-div {
+        position: absolute !important;
+        bottom: 0px;
+    }
 }
 
 .my-full-screen {
     width: 100%;
     height: 100vh;
 }
+
 /*
 @media (max-width: 576px) {
     ul.my-ul-fix {
@@ -140,65 +157,111 @@ ul.my-ul-fix li {
     margin-bottom: 0.1rem
 }
 
-.my-black-div-between-2-and-3{
+.my-black-div-between-2-and-3 {
     background: #161616;
     width: 100%;
     height: 250px;
 }
-.my-title-div-2screen-Trusted{
+
+.my-title-div-2screen-Trusted {
     margin-top: 200px;
 }
 
-.my-font-MS-semibold{
+.my-font-MS-semibold {
     font-family: "Montserrat";
-    font-weight:600;
+    font-weight: 600;
 }
 
-.my-font-MS-medium{
+.my-font-MS-medium {
     font-family: "Montserrat";
-    font-weight:500;
+    font-weight: 500;
 }
 
-.my-font-MS-regular{
+.my-font-MS-regular {
     font-family: "Montserrat";
-    font-weight:400;
+    font-weight: 400;
 }
 
-.my-font-MS-light{
+.my-font-MS-light {
     font-family: "Montserrat";
-    font-weight:300;
+    font-weight: 300;
 }
 
-.my-font-size-large{
+.my-font-size-large {
     font-size: 6rem;
 }
 
-.my-font-size-medium{
+.my-font-size-large-s {
+    font-size: 4rem;
+}
+
+.my-font-size-medium {
     font-size: 2rem;
 }
 
-.my-font-size-regulary{
+.my-font-size-regulary {
     font-size: 1.5rem
 }
 
-.my-font-size-small-m{
+.my-font-size-small-m {
     font-size: 1rem;
 }
 
-.my-font-size-small-s{
+.my-font-size-small-s {
     font-size: 0.75rem;
 }
 
-.my-color-light{
+.my-color-light {
     color: #EAEAEC;
 }
 
-.my-color-blue{
+.my-color-blue {
     color: #393E64;
 }
 
-.my-color-black{
+.my-color-black {
     color: #161616;
+}
+
+@media screen and (min-width: 1200px){
+    .my-fix-our-works{
+        padding-left: 90px
+    }
+}
+
+@media screen and (max-width: 400px){
+    .my-font-size-large-fix-mobile{
+        font-size: 5.5rem !important;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .my-font-size-large-fix-mobile{
+        font-size: 3.5rem !important;
+    }
+
+    .my-font-size-large-fix-mobile-title-1-screen-2{
+        font-size: 3.5rem !important;
+    }
+
+    .my-font-size-large-fix-mobile-title-1-screen-1{
+        font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (max-height: 570px){
+    .my-font-size-large-fix-mobile-title-1-screen-2{
+        font-size: 3.5rem !important;
+    }
+
+    .my-font-size-large-fix-mobile-title-1-screen-1{
+        font-size: 1.5rem !important;
+    }
+}
+
+.my-our-works{
+    line-height: 4.3rem;
+    margin-bottom: 15px;
 }
 
 

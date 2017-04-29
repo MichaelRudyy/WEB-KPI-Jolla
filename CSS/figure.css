@@ -46,10 +46,9 @@
     }
 }
 
-@media screen and (max-width:768px) { //
+@media screen and (max-width:768px) { /* its for tablets */
     .s1-f1{
-        left: 60vw;
-        bottom: -200px;
+        display: none;
     }
     .s1-f2{
         display: none;
@@ -59,8 +58,8 @@
     }
 }
 
-
 .s2-f1{
+    z-index: 1;
     position: absolute;
     bottom: -100px;
     left: 0px;
@@ -71,6 +70,7 @@
 }
 
 .s2-f2{
+    z-index: 1;
     position: absolute;
     bottom: -267px;
     left: 0px;
@@ -81,11 +81,81 @@
 }
 
 .s2-f3{
+    z-index: 1;
     position: absolute;
-    bottom: -476px;
+    bottom: -448px;/*-448*/
     left: 0px;
-    width: 400px;
+    width: 300px;/*300*/
     height: 200px;
     transform: skewY(30deg);
-    background: #E1E1E1;
+    background: #B0B0B0;
+}
+
+@media screen and (max-width: 992px){
+    .s2-f3{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:768px) { /* its for tablets */
+    .s2-f1{
+        width: 300px;
+    }
+    .s2-f2{
+        bottom: -225px;
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width:576px) { /* its for smartphones */
+    .s2-f3{
+        display: none;
+    }
+}
+
+.s3-f1 {
+    z-index: 1;
+    position: absolute;
+    bottom: -1110px;
+    right: 0px;
+    width: 300px;
+    height: 200px;
+    transform: skewY(-25deg);
+    background: #F8214E;
+}
+
+.s3-f2{
+    z-index: 1;
+    position: absolute;
+    bottom: -1250px;
+    right: 0px;
+    width: 300px;
+    height: 200px;
+    transform: skewY(25deg);
+    background: #CD2584;
+}
+
+@media screen and (max-width: 576px){
+    .s3-f1{
+        bottom: -1180px;
+        width: 100vw;
+    }
+    .s3-f2{
+        width: 100vw;
+        bottom: -1300px;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 340px){
+    .s3-f1{
+        bottom: -1220px;
+        width: 100vw;
+    }
+    .s3-f2{
+        display: none;
+
+    }
 }
