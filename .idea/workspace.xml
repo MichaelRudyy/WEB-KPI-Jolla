@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61ba2b16-afb2-4418-97e1-b65ecfa276c0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/1-screen-background.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CSS/example.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CSS/pw_maze_black.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CSS/pw_maze_black_@2X.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CSS/pw_maze_white.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CSS/whirlpool.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/PNG5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/example-div-img.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/exampleNavbar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/indexbackup.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/figure.css" afterPath="$PROJECT_DIR$/CSS/figure.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CSS/style.css" afterPath="$PROJECT_DIR$/CSS/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.htm" afterPath="$PROJECT_DIR$/index.htm" />
-    </list>
+    <list default="true" id="61ba2b16-afb2-4418-97e1-b65ecfa276c0" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -422,12 +407,12 @@
       <workItem from="1494534348378" duration="10835000" />
       <workItem from="1494669185990" duration="11984000" />
       <workItem from="1494700704230" duration="2062000" />
-      <workItem from="1494761408334" duration="6848000" />
+      <workItem from="1494761408334" duration="7967000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="160864000" />
+    <option name="totallyTimeSpent" value="161983000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
