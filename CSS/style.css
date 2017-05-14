@@ -1,5 +1,13 @@
+#background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("pw_maze_white_@2X.png");
+}
+
 #my-id-screen-1 {
-    background: #F1F1F1;
     left: 0;
     top: 0;
     right: 0;
@@ -7,7 +15,6 @@
 }
 
 #my-id-screen-after-1 {
-    background: #161616;
     width: 100%;
     position: absolute;
     top: 100%;
@@ -15,21 +22,49 @@
 
 #my-id-screen-2 {
     background: #161616;
-    width: 100%;
+    z-index: 3;
+    position: relative;
+    height: 1000px;
+}
 
+@media screen and (max-width: 1200px) {
+    #my-id-screen-2 {
+        height: 750px;
+    }
+}
 
+@media screen and (max-width: 768px) {
+    #my-id-screen-2 {
+        height: 850px;
+    }
 }
 
 #my-id-screen-3 {
-    background-color: #EAEAEC;
+    /*
+        background-color: #EAEAEC;
+        background-image: url("pw_maze_white_@2X.png");*/
 }
 
 #my-id-screen-4 {
-
+    z-index: 1;
+    position: relative;
+    background: #161616;
+    width: 100%;
 }
 
 #my-id-screen-5 {
+    z-index: 0;
+    position: relative;
+    /*
+    background-color: #EAEAEC;
+    background-image: url("pw_maze_white_@2X.png");*/
+}
 
+#my-id-screen-6 {
+    z-index: 1;
+    position: relative;
+    background: #161616;
+    width: 100%;
 }
 
 .pos-a {
@@ -54,16 +89,27 @@
     }
 }
 
-.my-shadow {
-    -webkit-box-shadow: 14px 10px 59px -6px rgba(22,22,22,0.22);
-    -moz-box-shadow: 14px 10px 59px -6px rgba(22,22,22,0.22);
-    box-shadow: 14px 10px 59px -6px rgba(22,22,22,0.22);
+@media screen and (min-width: 576px) {
+    .my-shadow {
+
+        -webkit-box-shadow: -30px -26px 114px -43px rgba(22, 22, 22, 0.32);
+        -moz-box-shadow: -30px -26px 114px -43px rgba(22, 22, 22, 0.32);
+        box-shadow: -30px -26px 114px -43px rgba(22, 22, 22, 0.32);
+        /*
+        -webkit-box-shadow: 0px 4px 8px 0 rgba(21, 21, 21, 0.3), 0px 6px 20px 0 rgba(21, 21, 21, 0.3);
+        -moz-box-shadow: 0px 4px 8px 0 rgba(21, 21, 21, 0.3), 0px 6px 20px 0 rgba(21, 21, 21, 0.3);
+        box-shadow: 0px 4px 8px 0 rgba(21, 21, 21, 0.3), 0px 6px 20px 0 rgba(21, 21, 21, 0.3);*/
+    }
 }
 
 .my-big-div-in-3-screen {
     background-color: #EAEAEC;
-    margin-top: 50px;
+}
 
+@media screen and (min-width: 992px) {
+    .my-block-960px {
+        width: 960px;
+    }
 }
 
 .my-white-bg {
@@ -75,14 +121,22 @@
 }
 
 .my-1-screen-text-div {
+    position: absolute !important;
+    bottom: 15vh;
+}
 
-    padding-top: 40vh;
+@media screen and (max-height: 572px) {
+    .my-1-screen-text-div {
+        position: absolute !important;
+        bottom: 2vh;
+    }
 }
 
 .my-full-screen {
     width: 100%;
     height: 100vh;
 }
+
 /*
 @media (max-width: 576px) {
     ul.my-ul-fix {
@@ -140,67 +194,280 @@ ul.my-ul-fix li {
     margin-bottom: 0.1rem
 }
 
-.my-black-div-between-2-and-3{
+.my-black-div-between {
+    top: -100px;
     background: #161616;
     width: 100%;
-    height: 250px;
-}
-.my-title-div-2screen-Trusted{
-    margin-top: 200px;
+    height: 50px;
 }
 
-.my-font-MS-semibold{
+.my-title-div-4screen-Trusted {
+    padding-top: 30vh;
+}
+
+@media screen and (max-width: 576px) {
+    .my-title-div-4screen-Trusted {
+        padding-top: 10vh;
+    }
+}
+
+.my-title-div-2screen-WeAreJolla {
+    padding-top: 140px;
+}
+
+@media screen and (max-width: 1200px) {
+    .my-title-div-2screen-WeAreJolla {
+        padding-top: 100px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .my-title-div-2screen-WeAreJolla {
+        padding-top: 40px;
+    }
+
+}
+
+.my-font-MS-bold {
     font-family: "Montserrat";
-    font-weight:600;
+    font-weight: 700;
 }
 
-.my-font-MS-medium{
+.my-font-MS-semibold {
     font-family: "Montserrat";
-    font-weight:500;
+    font-weight: 600;
 }
 
-.my-font-MS-regular{
+.my-font-MS-medium {
     font-family: "Montserrat";
-    font-weight:400;
+    font-weight: 500;
 }
 
-.my-font-MS-light{
+.my-font-MS-regular {
     font-family: "Montserrat";
-    font-weight:300;
+    font-weight: 400;
 }
 
-.my-font-size-large{
+.my-font-MS-light {
+    font-family: "Montserrat";
+    font-weight: 300;
+}
+
+.my-font-size-large {
     font-size: 6rem;
 }
 
-.my-font-size-medium{
+.my-font-size-large-s {
+    font-size: 4rem;
+}
+
+.my-font-size-medium {
     font-size: 2rem;
 }
 
-.my-font-size-regulary{
+.my-font-size-regulary {
     font-size: 1.5rem
 }
 
-.my-font-size-small-m{
+.my-font-size-regulary-s {
+    font-size: 1.2rem
+}
+
+.my-font-size-small-m {
     font-size: 1rem;
 }
 
-.my-font-size-small-s{
+.my-font-size-small-s {
     font-size: 0.75rem;
 }
 
-.my-color-light{
-    color: #EAEAEC;
+.my-color-light {
+    color: white;
+    /*color: #EAEAEC;*/
 }
 
-.my-color-blue{
+.my-color-blue {
     color: #393E64;
 }
 
-.my-color-black{
+.my-color-black {
     color: #161616;
 }
 
+.my-color-black-l {
+    color: #2B2D31;
+}
 
+@media screen and (min-width: 1200px) {
+    .my-fix-our-works {
+        padding-left: 90px
+    }
+}
 
+@media screen and (max-width: 400px) {
+    .my-font-size-large-fix-mobile {
+        font-size: 5.5rem !important;
+    }
+}
 
+@media screen and (max-width: 350px) {
+    .my-font-size-large-fix-mobile {
+        font-size: 3.5rem !important;
+    }
+
+    .my-font-size-large-fix-mobile-title-1-screen-2 {
+        font-size: 3.5rem !important;
+    }
+
+    .my-font-size-large-fix-mobile-title-1-screen-1 {
+        font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (max-height: 570px) {
+    .my-font-size-large-fix-mobile-title-1-screen-2 {
+        font-size: 3.5rem !important;
+    }
+
+    .my-font-size-large-fix-mobile-title-1-screen-1 {
+        font-size: 1.5rem !important;
+    }
+}
+
+.my-our-works {
+    line-height: 4.3rem;
+    margin-bottom: 15px;
+}
+
+.photo-team-screen-2 {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+@media screen and (max-width: 992px) {
+    .photo-team-screen-2 {
+        display: none;
+    }
+
+}
+
+.my-grad {
+    position: absolute;
+    width: 100%;
+    height: 40px;
+    /*
+    background: rgba(22,22,22,1);
+    background: -moz-linear-gradient(top, rgba(22,22,22,1) 0%, rgba(22,22,22,0) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(22,22,22,1)), color-stop(100%, rgba(22,22,22,0)));
+    background: -webkit-linear-gradient(top, rgba(22,22,22,1) 0%, rgba(22,22,22,0) 100%);
+    background: -o-linear-gradient(top, rgba(22,22,22,1) 0%, rgba(22,22,22,0) 100%);
+    background: -ms-linear-gradient(top, rgba(22,22,22,1) 0%, rgba(22,22,22,0) 100%);
+    background: linear-gradient(to bottom, rgba(22,22,22,1) 0%, rgba(22,22,22,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#161616', endColorstr='#161616', GradientType=0 );
+    */
+
+    background-image: -ms-linear-gradient(bottom, rgba(22, 22, 22, 0) 0%, rgba(22, 22, 22, 1) 100%);
+
+    /* Mozilla Firefox */
+    background-image: -moz-linear-gradient(bottom, rgba(22, 22, 22, 0) 0%, rgba(22, 22, 22, 1) 100%);
+
+    /* Opera */
+    background-image: -o-linear-gradient(bottom, rgba(22, 22, 22, 0) 0%, rgba(22, 22, 22, 1) 100%);
+
+    /* Webkit (Safari/Chrome 10) */
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(22, 22, 22, 0)), color-stop(1, rgba(22, 22, 22, 1)));
+
+    /* Webkit (Chrome 11+) */
+    background-image: -webkit-linear-gradient(bottom, rgba(22, 22, 22, 0) 0%, rgba(22, 22, 22, 1) 100%);
+
+    /* W3C Markup, IE10 Release Preview */
+    background-image: linear-gradient(to top, rgba(22, 22, 22, 0) 0%, rgba(22, 22, 22, 1) 100%);
+}
+
+.link-footer {
+    margin: 2vw;
+    bottom: 20px;
+}
+
+.link-header {
+    color: #393E64 !important;
+    padding: .5em;
+}
+
+.link-header:visited {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #393E64;
+
+}
+
+.link-header:hover {
+    text-decoration: none ; /* Убираем подчеркивание */
+
+    color: #1a1e34 !important;
+
+}
+
+.logo-header {
+    color: #393E64 !important;
+}
+
+.logo-header:visited {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #393E64 !important;
+}
+
+.logo-header:hover {
+    text-decoration: none; /* Убираем подчеркивание */
+    color:  #1a1e34 !important;
+}
+
+.link-footer:visited {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #2B2D31;
+}
+
+.link-footer:hover {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #fff; /* Цвет ссылки при наведении на нее курсора мыши */
+}
+
+a:visited {
+    color: #800080; /* Цвет посещенной ссылки */
+
+}
+
+.footer-1 {
+    text-align: center;
+}
+
+.footer-2 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .footer-1 {
+        text-align: center;
+    }
+
+    .footer-2 {
+        text-align: center;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .man-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .man-div {
+        display: none;
+    }
+}
