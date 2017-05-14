@@ -27,13 +27,13 @@
     height: 1000px;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
     #my-id-screen-2 {
         height: 750px;
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     #my-id-screen-2 {
         height: 850px;
     }
@@ -205,7 +205,7 @@ ul.my-ul-fix li {
     padding-top: 30vh;
 }
 
-@media screen and (max-width: 576px){
+@media screen and (max-width: 576px) {
     .my-title-div-4screen-Trusted {
         padding-top: 10vh;
     }
@@ -215,19 +215,20 @@ ul.my-ul-fix li {
     padding-top: 140px;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1200px) {
     .my-title-div-2screen-WeAreJolla {
         padding-top: 100px;
     }
 
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     .my-title-div-2screen-WeAreJolla {
         padding-top: 40px;
     }
 
 }
+
 .my-font-MS-bold {
     font-family: "Montserrat";
     font-weight: 700;
@@ -345,8 +346,8 @@ ul.my-ul-fix li {
     bottom: 0px;
 }
 
-@media screen and (max-width: 992px){
-    .photo-team-screen-2{
+@media screen and (max-width: 992px) {
+    .photo-team-screen-2 {
         display: none;
     }
 
@@ -385,16 +386,49 @@ ul.my-ul-fix li {
     background-image: linear-gradient(to top, rgba(22, 22, 22, 0) 0%, rgba(22, 22, 22, 1) 100%);
 }
 
-.link {
+.link-footer {
     margin: 2vw;
     bottom: 20px;
 }
-.link:visited{
+
+.link-header {
+    color: #393E64 !important;
+    padding: .5em;
+}
+
+.link-header:visited {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #393E64;
+
+}
+
+.link-header:hover {
+    text-decoration: none ; /* Убираем подчеркивание */
+
+    color: #1a1e34 !important;
+
+}
+
+.logo-header {
+    color: #393E64 !important;
+}
+
+.logo-header:visited {
+    text-decoration: none; /* Убираем подчеркивание */
+    color: #393E64 !important;
+}
+
+.logo-header:hover {
+    text-decoration: none; /* Убираем подчеркивание */
+    color:  #1a1e34 !important;
+}
+
+.link-footer:visited {
     text-decoration: none; /* Убираем подчеркивание */
     color: #2B2D31;
 }
 
-.link:hover{
+.link-footer:hover {
     text-decoration: none; /* Убираем подчеркивание */
     color: #fff; /* Цвет ссылки при наведении на нее курсора мыши */
 }
@@ -404,40 +438,36 @@ a:visited {
 
 }
 
-.footer-1{
-    text-align: left;
+.footer-1 {
+    text-align: center;
 }
 
-.footer-2{
-    text-align: right;
+.footer-2 {
+    text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
-
-
 @media screen and (max-width: 992px) {
-    .footer-1{
+    .footer-1 {
         text-align: center;
     }
 
-    .footer-2{
+    .footer-2 {
         text-align: center;
         padding-top: 10px;
     }
 }
 
-
-
 @media screen and (max-width: 1200px) {
-    .man-img{
+    .man-img {
         width: 100%;
         height: auto;
     }
 }
 
 @media screen and (max-width: 992px) {
-    .man-div{
+    .man-div {
         display: none;
     }
 }

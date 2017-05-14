@@ -8,22 +8,53 @@
     height: 350px;
     transform: skewY(-10deg);
     background: #fcef39;
-    background: -moz-linear-gradient(left, #fcef39 0%, # [object Object] 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, #fcef39), color-stop(100%, # [object Object]));
-    background: -webkit-linear-gradient(left, #fcef39 0%, # [object Object] 100%);
-    background: -o-linear-gradient(left, #fcef39 0%, # [object Object] 100%);
-    background: -ms-linear-gradient(left, #fcef39 0%, # [object Object] 100%);
-    background: linear-gradient(to right, #fcef39 0%, # [object Object] 100%);
+    background: -moz-linear-gradient(left, #fcef39 0%, #f58e3f 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #fcef39), color-stop(100%, #f58e3f));
+    background: -webkit-linear-gradient(left, #fcef39 0%, #f58e3f 100%);
+    background: -o-linear-gradient(left, #fcef39 0%, #f58e3f 100%);
+    background: -ms-linear-gradient(left, #fcef39 0%, #f58e3f 100%);
+    background: linear-gradient(to right, #fcef39 0%, #f58e3f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcef39', endColorstr='#f58e3f', GradientType=1 );
 }
 
-@media screen and (max-width: 1200px) {
-    .s1-f1 {
+.s1-f2{
+    z-index: 0;
+    position: absolute;
+    top: -5px;
+    left: calc(50vw - 560px);
+    /*right: 447px;*/
+    width: 100px;
+    height: 55px;
+    transform: skewY(-10deg);
+    border-style: solid;
+    border-width: 10px;
+    border-color: #F8BE3C;
+}
+
+@media screen and (max-width: 1199px) {
+    .s1-f2 {
+        left: calc(50vw - 470px);
     }
 }
 
-@media screen and (max-width: 968px) {
+@media screen and (max-width: 992px) {
     /* its for tablets */
-    .s1-f1 {
+    .s1-f2 {
+        left: calc(50vw - 350px);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    /* its for tablets */
+    .s1-f2 {
+        left: calc(50vw - 276px);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    /* its for tablets */
+    .s1-f2 {
+        left: calc(50vw - 45px);
     }
 }
 
